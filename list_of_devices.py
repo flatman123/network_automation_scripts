@@ -1,7 +1,7 @@
 import csv
 import random
 
-with open('./device_info.csv','a') as csvFile:
+with open('./device_info.csv','a', newline='') as csvFile:
     HEADERS = ['IPADDRESS', 'DEVICE', 'USERNAME']
     DEVICES = ['Cisco', 'Juniper', 'SonicWall']
     IP_ADDRESS_PREFIX = '192.168.0.'

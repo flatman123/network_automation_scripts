@@ -1,0 +1,10 @@
+terminal length 0
+conf t
+hostname CUSTOMER_RTR
+router ospf 1
+network 0.0.0.0 0.0.0.0 area 0
+network 172.0.0.0 0.0.0.255 area 17
+exit
+do wr
+do sh ip protocols
+

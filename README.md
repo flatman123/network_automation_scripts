@@ -1,2 +1,3 @@
 # network_automation_scripts
-network automation scripts in python
+
+Here you will find a bunch of automation scripts created in python.

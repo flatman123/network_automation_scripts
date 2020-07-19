@@ -52,16 +52,15 @@ device_info = {
     'server_port': port
 }
 
-client = build_ssh()
-connect = connect_to_host(client, **device_info)
-shell = build_shell(client)
+if __name__ == '__main__':
+    client = build_ssh()
+    connect = connect_to_host(client, **device_info)
+    shell = build_shell(client)
+    commands = 'enable, terminal length 0, show ip int bri'.split(',')
+    for cmd in commands:
+        results = send_commands(shell, cmd)
+    print(results)
+    close_session(client)
 
-commands = 'enable, terminal length 0, show ip int bri'.split(',')
-for cmd in commands:
-    results = send_commands(shell, cmd)
 
-print(results)
-
-
-close_session(client)
 

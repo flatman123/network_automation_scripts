@@ -9,6 +9,7 @@ def build_ssh():
     return ssh_client
 
 def connect_to_host(client, host_ip, user, pwd, server_port='22', allow_agnt=False, keys=False ):
+    # print( host_ip, user, pwd, server_port, allow_agnt, keys)
     print(f'Connecting client to {host_ip}...')
     time.sleep(3)
     client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
@@ -39,8 +40,20 @@ def close_session(client_shell):
         print('Session Closed')
     return
 
+host_ip = '192.168.0.178'
+usr = 'admin'
+pwd = 'cisco123'
+port = '22'
+
+device_info = {
+    'host_ip': host_ip,
+    'user': usr,
+    'pwd': pwd,
+    'server_port': port
+}
+
 client = build_ssh()
-connect = connect_to_host(client, '192.168.0.178', 'admin', 'cisco123')
+connect = connect_to_host(client, **device_info)
 shell = build_shell(client)
 
 commands = 'enable, terminal length 0, show ip int bri'.split(',')

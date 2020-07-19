@@ -22,7 +22,6 @@ configuration_output = myPymodule.send_commands(shell, 'show run')\
                                 .splitlines()\
 
 configuration_file = '\n'.join(configuration_output[7:-1])
-
 myPymodule.close_session(ssh_client)
 
 def backup_config(file):

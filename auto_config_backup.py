@@ -24,6 +24,7 @@ configuration_output = myPymodule.send_commands(shell, 'show run')\
 configuration_file = '\n'.join(configuration_output[7:-1])
 myPymodule.close_session(ssh_client)
 
+
 def backup_config(file):
     print(f'Backing up configuration for host {host_ip}...')
     date = datetime.datetime.now()

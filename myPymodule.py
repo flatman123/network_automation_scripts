@@ -2,8 +2,8 @@ import paramiko
 import time
 
 
-def build_ssh():
-    print(f'Generating ssh client...')
+def build_ssh(host):
+    print(f'Generating ssh client for host {host}...')
     time.sleep(3)
     ssh_client = paramiko.SSHClient()
     return ssh_client
@@ -18,27 +18,33 @@ def connect_to_host(client, host_ip, user, pwd, server_port='22', allow_agnt=Fal
     print(f'Successfully connected to {host_ip}!')
     return client
 
-def build_shell(client):
-    print('Building shell...')
+def build_shell(client, host):
+    print(f'Building shell {host}...')
     time.sleep(3)
     client_shell = client.invoke_shell()
     return client_shell
 
-def send_commands(client_shell, commands, enter='\n'):
-    print('Sending commands to device...')
-    client_shell.send(f'{commands}{enter}')
-    time.sleep(2)
-    output = client_shell.recv(10000).decode('utf-8')
-    return output
-
 def close_session(client_shell):
     client_shell.get_transport().is_active()
     if client_shell:
-        print('Closing ssh session...')
+        print(f'Closing ssh session..')
         time.sleep(3)
         client_shell.close()
         print('Session Closed')
     return
+
+def send_commands(client_shell, commands, enter='\n', timeout=5):
+    print('Sending commands to device...')
+
+    ''' UNCOMMENT THIS LINE IF YOU'RE WORKING WITH A CISCO DEVICE'''
+    client_shell.send(f'terminal length 0 {enter}')
+
+    client_shell.send(f'{commands}{enter}')
+    time.sleep(timeout)
+    output = client_shell.recv(10000).decode('utf-8')
+    close_session(client_shell)
+    return output
+
 
 host_ip = '192.168.0.178'
 usr = 'admin'
@@ -56,7 +62,7 @@ if __name__ == '__main__':
     client = build_ssh()
     connect = connect_to_host(client, **device_info)
     shell = build_shell(client)
-    commands = 'enable, terminal length 0, show ip int bri'.split(',')
+    commands = 'enable, show ip int bri'.split(',')
     for cmd in commands:
         results = send_commands(shell, cmd)
     print(results)

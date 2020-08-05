@@ -3,7 +3,7 @@ import datetime
 import time
 import threading
 
-last_octet = ['184', '186', '110']
+last_octet = ['123']
 
 def backup_multiple_devices(octet):
     todays_date = datetime.datetime.now()

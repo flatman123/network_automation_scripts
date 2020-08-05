@@ -25,8 +25,8 @@ def build_shell(client, host):
     return client_shell
 
 def close_session(client_shell):
-    client_shell.get_transport().is_active()
-    if client_shell:
+    shell_is_active = client_shell.get_transport().is_active()
+    if shell_is_active:
         print(f'Closing ssh session..')
         time.sleep(3)
         client_shell.close()

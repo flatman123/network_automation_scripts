@@ -6,19 +6,22 @@ import concurrent.futures
 import sys
 
 
-# we need variables for public 1 and public2
-# we also need tunnel address for both endpoints
-# ask for this information ahead of time.
 
 pwd = getpass.getpass(prompt='Enter password: '.strip(), stream=sys.stderr)
 pre_shared = getpass.getpass(prompt='Enter password for pre-shared key: '.strip(), stream=sys.stderr)
 host_tunnel_address_1 = input('What will the tunnel address be for the first host?(<ADDRESS> <MASK>): ').strip()
 host_tunnel_address_2 = input('What will the tunnel address be for the second host?(<ADDRESS> <MASK>): ').strip()
-tunnel_source_host1 = "192.168.0.242"
-tunnel_source_host2 = "172.10.16.6"
+tunnel_source_host1 = input('Enter tunnel source address for host_1?(<ADDRESS>): ').strip()
+tunnel_source_host2 = input('Enter tunnel source address for host_2?(<ADDRESS>): ').strip()
 
 t1 = time.perf_counter()
 
+'''
+THIS SCRIPT WILL ASSUME THAT THE PEERS ARE OPERATING OVER
+OSPF AREA 13..HOWEVER YOU CAN COMMENT OUT THE LAST KEY OF THE "holders" 
+DICTIONARY IF YOU'D LIKE :0)
+'''
+    
 def placeHolders(line, address):
     holders = {
         "ip address <LOCAL TUNNEL ADDRESS>\n": f"ip address {host_tunnel_address_1 if address == tunnel_source_host1 else host_tunnel_address_2}" ,

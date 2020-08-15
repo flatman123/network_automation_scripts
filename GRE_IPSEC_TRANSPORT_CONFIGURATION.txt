@@ -1,0 +1,29 @@
+conf t
+crypto isakmp policy 1
+ encr aes 256
+ authentication pre-share
+ group 5
+ lifetime 70000
+crypto isakmp key 6 <PRE-SHARED> address <PEER ADDRESS>
+crypto ipsec transform-set TRANSFORM-SET-1 esp-aes 256 esp-sha-hmac
+mode transport
+crypto ipsec profile IPSEC-TRANS-PROFILE
+set transform-set TRANSFORM-SET-1
+
+exit
+
+interface tunnel2
+Desc GRE IPSEC TUNNEL
+ip address <LOCAL TUNNEL ADDRESS>
+tunnel source <LOCAL PUBLIC ADDRESS>
+tunnel destination <PEER PUBLIC ADDRESS>
+tunnel protection ipsec profile IPSEC-TRANS-PROFILE
+
+exit
+
+router ospf 1
+network 
+end 
+
+wr
+

@@ -1,0 +1,24 @@
+192.168.0.166 | CHANGED | rc=0 >>
+
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            192.168.0.166   YES DHCP   up                    up      
+FastEthernet0/1            unassigned      YES manual administratively down down    
+FastEthernet1/0            unassigned      YES manual administratively down down    
+FastEthernet2/0            unassigned      YES manual administratively down down    Shared connection to 192.168.0.166 closed.
+
+192.168.0.242 | CHANGED | rc=0 >>
+
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            192.168.0.242   YES DHCP   up                    up      
+FastEthernet0/1            unassigned      YES manual administratively down down    
+FastEthernet1/0            unassigned      YES manual administratively down down    
+FastEthernet2/0            unassigned      YES manual administratively down down    Shared connection to 192.168.0.242 closed.
+
+192.168.0.240 | CHANGED | rc=0 >>
+
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            192.168.0.240   YES DHCP   up                    up      
+FastEthernet0/1            unassigned      YES NVRAM  administratively down down    
+FastEthernet1/0            unassigned      YES NVRAM  administratively down down    
+FastEthernet2/0            unassigned      YES NVRAM  administratively down down    Shared connection to 192.168.0.240 closed.
+

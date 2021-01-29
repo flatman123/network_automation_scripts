@@ -1,0 +1,2 @@
+sudo cat /etc/shadow
+cisco123

@@ -1,0 +1,2 @@
+[2020-08-10 12:50:04.635] [renderer1] [error] Error: [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/yaml_1.yml'
+[2020-08-10 12:50:04.636] [renderer1] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/yaml_1.yml'

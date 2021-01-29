@@ -1,0 +1,13 @@
+
+R3#terminal length 0
+R3#show ip int bri
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            192.168.0.242   YES DHCP   up                    up      
+FastEthernet0/1            10.10.10.3      YES NVRAM  up                    up      
+FastEthernet1/0            192.168.3.1     YES manual up                    up      
+FastEthernet2/0            192.168.33.1    YES manual up                    up      
+NVI0                       unassigned      NO  unset  up                    up      
+Loopback3                  3.3.3.3         YES NVRAM  up                    up      
+Loopback33                 172.3.3.3       YES NVRAM  up                    up      
+R3#
+R3#

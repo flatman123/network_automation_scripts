@@ -1,0 +1,37 @@
+---
+
+# - name: Running Show commands on cisco devices
+#   hosts: routers
+#   gather_facts: false
+#   connection: network_cli
+
+  # tasks:
+  #   - name: Run sho ip router and show ip bgp neighbors
+  #     ios_command:
+  #       commands:
+  #         - show ip bgp
+  #         - show bgp neighbors
+  #         - show ip access-lists
+
+  #     register: router_output
+
+  #   # print out output
+  #   - name: "Printing out the out the output for verification"
+  #     debug: var=router_output.stdout_lines
+
+  # tasks:
+  #   - name: Running show run command for all routers
+  #     ios_command:
+  #       commands:
+  #         - show run
+  #     register: jeff_backup_config
+    
+  #   - name: Saving router configuration to a file on disk
+  #     copy:
+  #       content: "{{jeff_backup_config.stdout[0]}}"
+  #       dest: "/home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/{{inventory_hostname}}.txt"
+
+
+
+# Testing using the old method of setting connection to local
+

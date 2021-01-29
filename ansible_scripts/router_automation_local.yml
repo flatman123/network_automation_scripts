@@ -1,0 +1,30 @@
+- name: Testing connection local
+  hosts: routers
+  gather_facts: no
+  connection: local
+
+  # the 'vars' keyword is used to create varibles directly inside your playbook
+
+
+  vars: 
+    jeff_login:
+      username: admin
+      password: cisco123
+      auth_pass: cisco123 #< -- this means that it will enter the enable password
+      authorize: true # <-- this means that you can enter enable mode
+
+  tasks:
+    - name: Running some commands using local ( old method )
+      ios_command:
+
+      # the 'provider' keyword is used for passing in credentials'
+         # NOTE: SINCE WE'RE USING THE 'provider' keyword, we do not need to specify the 
+      # username when running this playbook from command, becaues it is already here.
+        provider: "{{jeff_login}}"
+        commands:
+          - show ip int bri
+          - show clock
+      register: jeffs_output
+
+    - name: Printing out the output for local
+      debug: var=jeffs_output.stdout_lines

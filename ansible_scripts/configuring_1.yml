@@ -1,0 +1,31 @@
+---
+
+- name: configuring loopback interfaces
+  hosts: routers
+  gather_facts: false
+  connection: network_cli
+
+  tasks:
+    - name: Setting up loopback interfaces...
+      ios_config:
+        save_when: always
+        lines:
+          - ip address 1.1.1.2 255.255.255.255
+        parents: interface loopback2 #will apply config if an only if it doesnt exist in parent
+      register: rtr_output
+
+    - name: Backing up configuration
+      ios_config:
+        backup: yes
+
+    - name: Verifying the loopback interfaces
+      ios_command:
+        commands:
+          - show ip int bri
+      register: int_bri_output
+
+    - name: Printing out the output for you to see!
+      debug: var=int_bri_output
+
+
+...

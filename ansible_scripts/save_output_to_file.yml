@@ -1,0 +1,28 @@
+---
+
+- name: save router output to file
+  hosts: routers
+  gather_facts: false
+  connection: network_cli
+
+  # vars:
+  #   ansible_become: yes
+  #   ansible_user: admin
+  #   ansible_become_method: enable
+  #   ansible_ssh_pass: cisco123
+  #   ansible_network_os: ios
+
+  tasks:
+    - name: show ip int bri to file
+      ios_command:
+        commands:
+          - show ip int bri
+          - show ver
+      register: jeffout
+
+    - name: Copying stuff to file! 
+      copy:
+        content: "{{jeffout.stdout[0]}}"
+        dest: "/home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/{{inventory_hostname}}_jeff.txt"
+
+...

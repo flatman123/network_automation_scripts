@@ -1,0 +1,7 @@
+file:///home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/linux_serv_automation.yml {"mtime":1597085913134,"ctime":1597085913106,"size":0,"etag":"35gs863a30","orphaned":false}
+---
+
+- name: Creating a user on linux server
+  
+
+...

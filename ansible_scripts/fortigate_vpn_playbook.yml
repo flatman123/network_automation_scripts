@@ -1,0 +1,17 @@
+---
+
+- name: Check R1 status and stuff
+  hosts: fortigate_fw
+  gather_facts: false
+  connection: network_cli
+
+  tasks:
+    - name: Get vpn status
+      ios_command: 
+        commands:
+          - get router info routing-table all
+      register: vpn_output
+
+    - debug: var=vpn_output.stdout_lines
+
+...

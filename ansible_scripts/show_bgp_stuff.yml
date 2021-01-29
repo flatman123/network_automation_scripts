@@ -1,0 +1,15 @@
+---
+
+- name: show interface stuff
+  hosts: routers
+  gather_facts: false
+
+  tasks:
+  - name: Show me interface things
+    raw: "show ip int bri"
+    register: my_output
+
+  - name: Print the Ooutput
+    debug: var=my_output.stdout_lines
+
+...

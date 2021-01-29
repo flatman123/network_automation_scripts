@@ -1,0 +1,3 @@
+[2020-08-06 14:22:11.167] [sharedprocess] [info] main {"machineId":"7023b7c75af06cb580a2bd81048cc6b5e2f29b3831d918fec1050d68eeeef574","windowId":2}
+[2020-08-06 14:22:11.404] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/User/snippets'
+[2020-08-06 14:22:51.253] [sharedprocess] [info] Starting to clean up unused language packs.

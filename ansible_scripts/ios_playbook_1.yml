@@ -1,0 +1,17 @@
+---
+
+- name: Running show commands on cisco devices
+  hosts: routers
+  gather_facts: false
+  connection: network_cli
+
+  tasks:
+    - name: Run Multtiple commands on cisco ios
+      ios_command:
+        commands:
+          - show version
+          - show clock
+          - show arp  
+      register: my_router_output
+    
+    - debug: var=my_router_output.stdout_lines

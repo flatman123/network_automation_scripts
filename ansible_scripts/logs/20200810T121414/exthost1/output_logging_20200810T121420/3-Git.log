@@ -1,0 +1,512 @@
+Looking for git in: git
+Using git 2.25.1 from git
+> git rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+> git rev-parse --show-toplevel
+> git rev-parse --git-dir
+Open repository: /home/redeyecoding/pythonScripts/network_automation_scripts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :ansible_scripts/yaml_1.yml
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/yaml_1.yml
+> git check-ignore -v -z --stdin
+> git rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+> git check-ignore -v -z --stdin
+> git show --textconv :ansible_scripts/hosts
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/hosts
+> git show --textconv :ansible_scripts/yaml_1.yml
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/yaml_1.yml
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :ansible_scripts/hosts
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/hosts
+> git rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-parse --show-toplevel
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+fatal: not a git repository (or any of the parent directories): .git
+> git config --get commit.template
+> git show --textconv :ansible_scripts/yaml_1.yml
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/yaml_1.yml
+> git show --textconv :ansible_scripts/routers.yml
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/routers.yml
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :ansible_scripts/router_automation_local.yml
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/router_automation_local.yml
+> git check-ignore -v -z --stdin
+> git show --textconv :ansible_scripts/router_automation_network_cli.yml
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/router_automation_network_cli.yml
+> git check-ignore -v -z --stdin
+> git show --textconv :ansible_scripts/router_automation_local.yml
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/router_automation_local.yml
+> git show --textconv :ansible_scripts/router_automation_network_cli.yml
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/router_automation_network_cli.yml
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :ansible_scripts/hosts
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/hosts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :ansible_scripts/routers.yml
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/routers.yml
+> git show --textconv :ansible_scripts/hosts
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/hosts
+> git show --textconv :ansible_scripts/router_automation_network_cli.yml
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/router_automation_network_cli.yml
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :ansible_scripts/linux_serv_automation.yml
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/linux_serv_automation.yml
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :ansible_scripts/router_automation_network_cli.yml
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/router_automation_network_cli.yml
+> git show --textconv :ansible_scripts/linux_serv_automation.yml
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/linux_serv_automation.yml
+> git check-ignore -v -z --stdin
+> git show --textconv :ansible_scripts/ansible_hosts
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/ansible_hosts
+> git show --textconv :ansible_scripts/linux_serv_automation.yml
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/linux_serv_automation.yml
+> git show --textconv :ansible_scripts/router_automation_network_cli.yml
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/router_automation_network_cli.yml
+> git show --textconv :ansible_scripts/ansible_hosts
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/ansible_hosts
+> git show --textconv :ansible_scripts/linux_serv_automation.yml
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/linux_serv_automation.yml
+> git show --textconv :ansible_scripts/router_automation_network_cli.yml
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/router_automation_network_cli.yml
+> git show --textconv :ansible_scripts/ansible_hosts
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/ansible_hosts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :ansible_scripts/router_automation_network_cli.yml
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/router_automation_network_cli.yml
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :ansible_scripts/ansible_hosts
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/ansible_hosts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :ansible_scripts/linux_serv_automation.yml
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/linux_serv_automation.yml
+> git show --textconv :ansible_scripts/router_automation_network_cli.yml
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/router_automation_network_cli.yml
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :ansible_scripts/ansible_hosts
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/ansible_hosts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :ansible_scripts/hosts
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/hosts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :ansible_scripts/router_automation_network_cli.yml
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/router_automation_network_cli.yml
+> git show --textconv :ansible_scripts/hosts
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/hosts
+> git show --textconv :ansible_scripts/router_automation_network_cli.yml
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/router_automation_network_cli.yml
+> git show --textconv :ansible_scripts/hosts
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/hosts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :ansible_scripts/ansible_hosts
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/ansible_hosts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :ansible_scripts/router_automation_network_cli.yml
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/router_automation_network_cli.yml
+> git show --textconv :ansible_scripts/hosts
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/hosts
+> git show --textconv :ansible_scripts/routers.yml
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/routers.yml
+> git show --textconv :ansible_scripts/router_automation_network_cli.yml
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/router_automation_network_cli.yml
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :ansible_scripts/ansible_hosts
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/ansible_hosts
+> git rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+> git show --textconv :ansible_scripts/ansible_hosts
+> git ls-files --stage -- /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/ansible_hosts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template

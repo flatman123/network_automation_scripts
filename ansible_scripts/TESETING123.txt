@@ -1,0 +1,5 @@
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            192.168.0.210   YES DHCP   up                    up      
+FastEthernet0/1            unassigned      YES unset  administratively down down    
+FastEthernet1/0            unassigned      YES unset  administratively down down    
+FastEthernet2/0            unassigned      YES unset  administratively down down

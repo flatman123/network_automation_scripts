@@ -1,0 +1,46 @@
+---
+- name: testing network_cli module
+  hosts: routers
+  gather_facts: no
+  connection: network_cli
+  # become: yes
+  # become_method: enable
+
+  # # The above are call ansible directives...
+  # # NOTE: THE become and become_method directives are the same as
+  #   # the 'ansible_become'  and 'ansible_become_method' behaviral parameters
+  #     # you can remove them from UP TOP AND PLACE THEM BELOW within vars if you
+
+  # vars:
+  #   # NOTE: when using 'network_cli the variable names you see below
+  #     # ARE MANDITORY and are called Behavioral parameters
+  #   ansible_user: admin
+  #   ansible_ssh_pass: cisco123 # <-- a.k.a the user's password
+  #   ansible_become_pass: cisco12345 # < -- a.k.a the enable password
+  #   ansible_network_os: ios
+  #   ansible_become: yes #< -- a.k.a says " become an enable user"
+  #   ansilbe_become_method: enable #<-- this is the actual 'enable' command...
+  #                                   #if you were in linux it would be 'su'
+
+  tasks:
+    - name: Executing some commands using the moder network_cli module
+      ios_command:
+        commands:
+          - conf t
+          - interface loopback120
+          - ip address 172.100.100.1 255.255.255.255
+          - end
+          - show ip int bri
+                
+      register: my_output
+
+    - name: print out information
+      debug: var=my_output.stdout_lines
+
+    - name: This task will copy the contents into a file for records
+      copy:
+        content: "{{my_output}}"
+        dest: /home/redeyecoding/pythonScripts/network_automation_scripts/ansible_scripts/{{inventory_hostname}}_RTR.txt
+
+
+...
